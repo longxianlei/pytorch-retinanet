@@ -38,7 +38,7 @@ positive，negative，比例1:3。这是roi的选择，rpn阶段，同理，rcnn
   - 当![img](https://cdn.nlark.com/yuque/__latex/011f9f40084dbe619093c6799fd364ca.svg#card=math&code=p_t&height=14&width=15)比较大时，正确分类的置信度高，属于易样例，权重就比较小
   - 当![img](https://cdn.nlark.com/yuque/__latex/011f9f40084dbe619093c6799fd364ca.svg#card=math&code=p_t&height=14&width=15)比较小时，正确分类的置信度低，属于难样例，权重就比较大
 
-<img src="image-20210819200019351.png" alt="image-20210819200019351" style="zoom: 20%;" />
+<img src="image-20210819200019351.png" alt="image-20210819200019351" style="zoom: 10%;" />
 
 
 
