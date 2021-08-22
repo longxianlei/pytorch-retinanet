@@ -38,7 +38,7 @@ positive，negative，比例1:3。这是roi的选择，rpn阶段，同理，rcnn
   - 当![img](https://cdn.nlark.com/yuque/__latex/011f9f40084dbe619093c6799fd364ca.svg#card=math&code=p_t&height=14&width=15)比较大时，正确分类的置信度高，属于易样例，权重就比较小
   - 当![img](https://cdn.nlark.com/yuque/__latex/011f9f40084dbe619093c6799fd364ca.svg#card=math&code=p_t&height=14&width=15)比较小时，正确分类的置信度低，属于难样例，权重就比较大
 
-<img src="./markdown_fig/image-20210819200019351.png" alt="image-20210819200019351" style="zoom: 33%;" />
+<img src="image-20210819200019351.png" alt="image-20210819200019351" style="zoom: 33%;" />
 
 
 
@@ -94,7 +94,7 @@ RetinaNet FPN 这个结构，对label的编码，是包含在正负样本定义�
 
 两个gt box，分别是两类，分别为 类别1,2。则编码出来的，是与其 iou最大的anchor box，其负责这一类的分类与回归。例如：第i个anchor，负责第1类，则[0, 1, 0] one hot 编码。 第j个anchor 负责第2类，则[0, 0, 1]。只需要对应的[第i类，第几个anchor，anchor的grid的位置h，anchor所在的grid位置w]=1。
 
-![Figure_1](.\markdown_fig\Figure_1.png)
+![Figure_1](Figure_1.png)
 
 计算loss的时候，只需要负责处理target为0,1样本，忽略掉ignore样本。
 
